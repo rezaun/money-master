@@ -1,0 +1,7 @@
+.left-section img{
+    height: 750px;
+    width: 100%;
+}
+::placeholder{
+    color: #fff !important;
+}
