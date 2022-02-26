@@ -3,6 +3,7 @@ const saveingAmount     = document.getElementById('saving-amount');
 const remainingAmount   = document.getElementById('remaining-balance');
 const balanceText       = document.getElementById('balance');
 
+// Get input value using ID
 function getInputValue(inputId) {
     const inputField        = document.getElementById(inputId);
     const inputAmountText   = inputField.value;
@@ -34,6 +35,7 @@ document.getElementById('calculate-button').addEventListener('click', function()
         return alert('Please put valid Cloths cost value only positive number please');
 
     }
+
     let totalThreeExpense   = foodInput + rentInput + clothesInput;    
     let balance             = incomeInput - totalThreeExpense;   
 
@@ -63,9 +65,6 @@ document.getElementById('save-button').addEventListener('click', function(){
 
     if(isNaN(saveInput) || saveInput < 0){
         return alert('Please write positive value in the save field');
-    }
-    if(saveInput < balanceText){        
-        return alert('Your desire saving amout is greater then your remain income');
     }
     const balanceTextAmount = balanceText.innerText;
     const finalSave         = Math.round(balanceTextAmount / saveInput );

@@ -1,19 +1,11 @@
+
 .left-section img{
     height: 750px;
     width: 100%;
 }
+
+/* Place Holder css here */
 ::placeholder{
     color: #fff !important;
 }
 
-/* Notify css here */
-.notify {
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
-    background: #222436;
-    margin-top: 20px;
-    border-radius: 15px;
-    padding: 5px 20px;
-    display: none;
-}
